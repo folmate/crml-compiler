@@ -38,3 +38,5 @@ RUN echo "deb [arch=amd64 signed-by=/usr/share/keyrings/openmodelica-keyring.gpg
 
 RUN apt update
 RUN apt install --no-install-recommends omc -y
+
+COPY .ssh /config/.ssh

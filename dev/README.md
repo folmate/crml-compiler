@@ -19,3 +19,8 @@ docker run -d --name=crml-dev ^
     -v %CRML_HOME%:/config/crml-compiler ^
     crml-dev 
 ```
+
+## Git integration
+You can set ssh keys for the container by putting them into the .ssh directory before build.
+
+It is also possible to set up *Deploy keys* to allow pushing to a single repository.
