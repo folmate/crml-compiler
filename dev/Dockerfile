@@ -37,7 +37,7 @@ RUN echo "deb [arch=amd64 signed-by=/usr/share/keyrings/openmodelica-keyring.gpg
   stable" | sudo tee /etc/apt/sources.list.d/openmodelica.list
 
 RUN apt update
-RUN apt install --no-install-recommends omc -y
+RUN apt install omc omlibrary -y
 
 COPY .ssh /config/.ssh
 RUN if chmod 700 /config/.ssh/id_rsa /config/.ssh/id_rsa.pub ; then echo "SSH key installed." ; else echo "Proceeding without SSHkey." ; fi
