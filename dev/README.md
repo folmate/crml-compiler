@@ -3,7 +3,7 @@
 ## Build
 ### Windows Command Prompt
 ```console
-docker build -t crml-dev .
+docker build -t crml-dev --progress=plain .
 ```
 
 ## Run container

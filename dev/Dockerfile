@@ -40,3 +40,5 @@ RUN apt update
 RUN apt install --no-install-recommends omc -y
 
 COPY .ssh /config/.ssh
+RUN if chmod 700 /config/.ssh/id_rsa /config/.ssh/id_rsa.pub ; then echo "SSH key installed." ; else echo "Proceeding without SSHkey." ; fi
+
